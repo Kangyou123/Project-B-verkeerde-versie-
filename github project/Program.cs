@@ -1,10 +1,4 @@
-﻿
-
-
-
-
-
-Console.WriteLine("Enter age:");
+﻿Console.WriteLine("Enter age:");
 string value;
 int Age;
 value = Console.ReadLine();

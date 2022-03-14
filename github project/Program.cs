@@ -2,7 +2,15 @@
 string value;
 int Age;
 value = Console.ReadLine();
+
+while(!value.All(char.IsDigit))
+{
+    Console.WriteLine("only numbers");
+    value = Console.ReadLine();
+}
+
 Age = Convert.ToInt32(value);
+
 
 if (Age >= 16)
 {

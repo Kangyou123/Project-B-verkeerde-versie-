@@ -76,7 +76,7 @@ namespace Ahmad_test {
                     Console.Clear();
                     goto Startpoint;
                 }
-                else { Console.WriteLine("Klik op een ster om terug naar het hoofdmenu."); }
+                else { Console.WriteLine("Klik op een ster om terug naar het hoofdmenu. AA"); }
 
             }
 

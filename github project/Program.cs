@@ -1,86 +1,55 @@
 ﻿using System;
+using System.Linq;
 
-namespace Ahmad_test { 
+
+
+namespace Antal_Bezoker
+{
     internal class Program
     {
         static void Main(string[] args)
         {
-            string menu = "\nHoofdmenu optie hebben:\n\n1- Reserveren. \n2- Menu kaart zien.\n3- Algemene informatie tonen.\nKlik op een ster om terug naar het hoofdmenu.";
+            // bezoeker moet minimaal 1 en maximaal 8 personen zijn
 
-        Startpoint: Console.WriteLine("Welkom bij ons restaurant reserveringssesteem!\n");
-            Console.WriteLine("1- Inlogen. \n2- Doorgaan als gast. \n3- Registeren.\n4- Informatie.\n\n-Voer een van de bovenstaande nummers in: \n ");
+            Console.WriteLine("Vul het aantal personen in: ");
+            string x;
+            int person;
+            x = Console.ReadLine();
 
 
-            string Start;
-            Start = Console.ReadLine();
 
-            if (Start == "1")
+            // Controleer of het letters of cijfer zijn
+            while (!x.All(char.IsDigit))
             {
-
-                Console.Clear();
-                Console.WriteLine("Voer de gebruikersnaam in: \n");
-                Console.ReadLine();
-                Console.WriteLine("\nVoer het wachtwoord in: \n ");
-                Console.ReadLine();
-                Console.WriteLine(menu);
-                string gostart = Console.ReadLine();
-                if (gostart == "*")
-                {
-                    Console.Clear();
-                    goto Startpoint;
-                }
-                else { Console.WriteLine("Klik op een ster om terug naar het hoofdmenu."); }
-            }
-            else if (Start == "2")
-            {
-                Console.Clear();
-                Console.WriteLine("Verder zonder account\n" + menu);
-                string gostart = Console.ReadLine();
-                if (gostart == "*")
-                {
-                    Console.Clear();
-                    goto Startpoint;
-                }
-                else { Console.WriteLine("Klik op een ster om terug naar het hoofdmenu."); }
-            }
-            else if (Start == "3")
-            {
-                Console.Clear();
-                Console.WriteLine("Registeren: \n-Voer uw Voornaam in: ");
-                Console.ReadLine();
-                Console.WriteLine("Voer uw achter naam: ");
-                Console.ReadLine();
-                Console.WriteLine("Voer uw emailadres in: ");
-                Console.ReadLine();
-                Console.WriteLine("Wachtwoord invoeren: ");
-                Console.ReadLine();
-                Console.WriteLine("Leeftijd invoeren: ");
-                Console.ReadLine();
-                Console.WriteLine(menu);
-                string gostart = Console.ReadLine();
-                if (gostart == "*")
-                {
-                    Console.Clear();
-                    goto Startpoint;
-                }
-                else { Console.WriteLine("\nKlik op een ster om terug naar het hoofdmenu."); }
-
-            }
-            else if (Start == "4")
-            {
-                Console.Clear(); ;
-                Console.WriteLine("Openingstijden: maandag t/m vrijdag 10:00-22:00. \nweekend 12:00-24:00\n\nContact: telefoonnummer; 070 34 24818.\n\nAdres: Wijnhaven 107, 8518KA, Rotterdam \n\nKlik op een ster om terug naar het hoofdmenu\n");
-                string gostart = Console.ReadLine();
-                if (gostart == "*")
-                {
-                    Console.Clear();
-                    goto Startpoint;
-                }
-                else { Console.WriteLine("Klik op een ster om terug naar het hoofdmenu."); }
-
+                Console.WriteLine("Invalid value, Vul het aantal personen in: ");
+                x = Console.ReadLine();
             }
 
+
+
+            person = int.Parse(x);
+
+
+
+
+            if (person > 0 && person < 9)
+            {
+                Console.WriteLine("We reserveren de plaats voor u voor " + person + " persoon/personen");
+
+
+
+            }
+            else if (person < 1)
+            {
+                Console.WriteLine("Er moet voor minimaal één persoon woerden gereserveerd.");
+            }
+            else // meer dan 8 personen
+            {
+                Console.WriteLine("Als u meer dan 8 personen wilt boeken, neem dan telefonisch contact met ons op.\nT: 01 7245 754");
+            }
         }
+
+
 
     }
 }

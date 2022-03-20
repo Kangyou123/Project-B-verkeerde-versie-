@@ -70,6 +70,7 @@ namespace Menu
                 Console.WriteLine("Gerecht 3");
                 Console.WriteLine("Gerecht 4");
                 Console.WriteLine("Gerecht 5");
+                Console.WriteLine("Gerecht 6");
             }
         }
     }

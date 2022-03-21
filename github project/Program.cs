@@ -3,6 +3,7 @@
 namespace Ahmad_test { 
     internal class Program
     {
+        // hey dit is mijn eerste push
         static void Main(string[] args)
         {
             string menu = "\nHoofdmenu optie hebben:\n\n1- Reserveren. \n2- Menu kaart zien.\n3- Algemene informatie tonen.\nKlik op een ster om terug naar het hoofdmenu.";

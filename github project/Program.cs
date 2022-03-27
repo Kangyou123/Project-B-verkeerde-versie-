@@ -117,14 +117,7 @@ namespace Menu
                     goto dot;
                 }
             }
-                
-
-
-            //while (!int.TryParse(Console.ReadLine(), out Choose_nummer))
-            //{
-            //    Console.WriteLine("Fout");
-           // }
-
+               
                 // int.Parse(Console.ReadLine());
 
 

@@ -33,6 +33,7 @@ namespace Menu
                 int Choose_nummer = Convert.ToInt32(a);
                 if (Choose_nummer == 1)
                 {
+                    Een: Console.WriteLine("\n");
                     Console.Clear();
                     Console.WriteLine("Gerecht 1        Prijs :3.5 ");
                     Console.WriteLine("Gerecht 2");
@@ -52,10 +53,15 @@ namespace Menu
                         Console.Clear();
                         goto Begin;
                     }
+                    else
+                    {
+                        goto Een;
+                    }
 
                 }
                 else if (Choose_nummer == 2)
                 {
+                    Twee: Console.WriteLine("\n");
                     Console.Clear();
                     Console.WriteLine("Gerecht 1        Prijs :5.5 ");
                     Console.WriteLine("Gerecht 2");
@@ -75,9 +81,14 @@ namespace Menu
                         Console.Clear();
                         goto Begin;
                     }
+                    else
+                    {
+                        goto Twee;
+                    }
                 }
                 else if (Choose_nummer == 3)
                 {
+                    Drie: Console.WriteLine("\n");
                     Console.Clear();
                     Console.WriteLine("Gerecht 1        Prijs :5.5 ");
                     Console.WriteLine("Gerecht 2");
@@ -92,9 +103,14 @@ namespace Menu
                         Console.Clear();
                         goto Begin;
                     }
+                    else
+                    {
+                        goto Drie;
+                    }
                 }
                 else if (Choose_nummer == 4)
                 {
+                    Vier: Console.WriteLine("\n");
                     Console.Clear();
                     Console.WriteLine("Gerecht 1        Prijs :5.5 ");
                     Console.WriteLine("Gerecht 2");
@@ -110,6 +126,10 @@ namespace Menu
                         Console.Clear();
                         goto Begin;
                     }
+                    else
+                    {
+                        goto Vier; 
+                    }
                 }
                 else
                 {
@@ -117,11 +137,11 @@ namespace Menu
                     goto dot;
                 }
             }
-               
-                // int.Parse(Console.ReadLine());
+
+            // int.Parse(Console.ReadLine());
 
 
-         
+
         }
     }
 
